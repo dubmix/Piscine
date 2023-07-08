@@ -35,6 +35,29 @@ char	*ft_strstr(char *str, char *to_find)
 	return (0);
 }
 
+/*char    *ft_strstr(char *str, char *to_find)
+{
+    int i;
+
+    i = 0;
+    if (*to_find == '\0')
+        return (str);
+    while (*str != '\0')
+    {
+        i = 0;
+        while (str[i] == to_find[i])
+        {
+            if (to_find[i + 1] == '\0')
+            {   
+                return (str);
+            }
+            i++;
+        }
+        str++;
+    }
+    return (0); 
+}*/
+
 int	main(void)
 {
 	char	*str;
